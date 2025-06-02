@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import AnimalModal from "./components/AnimalModal";
 
+
 function App() {
 const [form, setForm] = useState({
   name: "",
