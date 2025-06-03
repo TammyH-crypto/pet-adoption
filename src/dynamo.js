@@ -26,6 +26,6 @@ export async function scanAnimals() {
   return Items || [];
 }
 
-export async function createAnimal(anmima) {
+export async function createAnimal(animal) {
   await docClient.send(new PutCommand({ TableName: TABLE, Item: animal }));
 }
