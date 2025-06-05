@@ -4,7 +4,6 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
 export default function AnimalModal({ show, onHide, form, onChange, onSave }) {
-
   return (
     <Modal show={show} onHide={onHide}>
       <Modal.Dialog>
@@ -21,7 +20,7 @@ export default function AnimalModal({ show, onHide, form, onChange, onSave }) {
                 type="text"
                 placeholder="Enter animal name"
                 value={form.name}
-                onChange={(e) => onChange (e)}
+                onChange={(e) => onChange(e)}
               />
             </Form.Group>
             <Form.Group controlId=";formAge">
